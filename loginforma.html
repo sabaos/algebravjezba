@@ -51,6 +51,16 @@
         }
         span.psw{float: right;
         padding-top: 16px;}
+        .container{padding: 16px;}
+        /*screen fix*/
+        @media screen and (max-width:300px){
+            span.psw{
+                display: block;
+                float: none;
+            }
+            .cancelbtn{width: 100%;}
+        }
+        .button:hover{opacity: 0.8;}
     </style>
 </head>
 
@@ -60,7 +70,7 @@
         <div class="imgcontainer">
             <img src="docs/img/userimage.png" alt="avatar" class="avatar">
         </div>
-        <div>
+        <div class="container">
             <label for="uname"><b>Korisničko ime</b></label>
             <input type="text" placeholder="Unesite korisničko ime" name="uname" required>
             <label for="psw"><b>Lozinka</b></label>
@@ -69,7 +79,7 @@
             <label>
                 <input type="checkbox" checked="checked" name="remember">Zapamti me</label>
         </div>
-        <div>
+        <div class="container" style="background-color: #f1f1f1;">
             <button type="button" class="cancelbtn">Odustani</button>
             <span class="psw">Zaboravljena <a href="#">lozinka?</a></span>
         </div>

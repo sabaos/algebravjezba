@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .brojcanik {
+            margin-left: 0;
+            padding-right: 0;
+            list-style: none;
+
+        }
+
+        .brojcanik li::before {
+            content: counter(step-counter);
+            margin-right: 5px;
+            font-size: 80%;
+            background: red;
+            color: blue;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+        .brojcanik li{
+            counter-increment: step-counter;
+            margin-top: 3px;
+        }
+        span::after{
+            content: "\2713";
+            color: green;
+            font-weight: 900;
+            font-size: 16px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <ol class="brojcanik">
+        <li><span>prvi element</span></li>
+        <li>drugi element</li>
+        <li>treći element</li>
+        <li>četvrti element</li>
+        <li><span>peti element</span></li>
+        <li>šesti element</li>
+    </ol>
+</body>
+
+</html>

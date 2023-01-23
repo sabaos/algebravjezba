@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            border: 2px solid black;
+        }
+
+        hr {
+            border: 4px red dotted;
+        }
+
+        ::marker {
+            color: red;
+        }
+
+        .lista1 {
+            list-style-type: upper-latin;
+        }
+
+        .lista2 {
+            list-style-type: lower-latin;
+        }
+
+        .lista3 {
+            list-style-type: none;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        span::after {
+            content: " \2713";
+            color: green;
+        }
+
+        .lista3::before {
+            content: "\2023  ";
+            color: red;
+            font-size: 1.5em;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: magenta;
+        }
+
+        a:hover {
+            background-color: lightgreen;
+            color: yellow;
+        }
+
+        a:active {
+            background-color: yellow;
+            color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Zadatak 10</h1>
+    <section>
+        <p>1 Koji je glavni grad Hrvatske</p>
+        <ol class="lista1">
+            <li>Koprivnica</li>
+            <li>Osijek</li>
+            <li><span>Zagreb</span></li>
+            <li>Rijeka</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <p>2 Koja je rijeka koja protječe kroz Hrvatsku najduža</p>
+        <ol class="lista2">
+            <li>Mura</li>
+            <li><span>Sava</span></li>
+            <li>Drava</li>
+            <li>Dunav</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <p>3 Pogledajte slijedeće video linkove</p>
+        <ul>
+            <li class="lista3"><a href="https://www.youtube.com/watch?v=PujoYGXp9Zo">Play bass gutar</a></li>
+            <li class="lista3"><a href="https://www.youtube.com/watch?v=0fbxmdPX-lA">Stop eating sugar</a></li>
+            <li class="lista3"><a href="./zadatak10.html">Treći</a></li>
+            <li class="lista3"><a href="https://www.index.hr">Četvrti</a></li>
+            <li class="lista3"><a href="https://www.bug.hr">Peti</a></li>
+        </ul>
+    </section>
+    <hr>
+</body>
+
+</html>

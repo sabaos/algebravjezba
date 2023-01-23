@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inline CSS</title>
+    <style>
+        div p {
+            text-decoration: underline;
+        }
+
+        .naznaka p {
+            color: red;
+        }
+
+        .naznaka .tekst {
+            background-color: yellow;
+            font-style: italic;
+        }
+        div > span{color: red;
+        border-bottom: 2px solid blue;}
+    </style>
+</head>
+
+<body>
+    <diV><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis nobis consequatur ipsam quae
+        aut laboriosam perferendis aperiam ea, accusantium ratione nam doloribus non dolorum saepe voluptas hic ad
+        cum?</p>
+    </diV>
+    <div class="naznaka">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis nobis consequatur ipsam quae
+            aut laboriosam perferendis aperiam ea, accusantium ratione nam doloribus non dolorum saepe voluptas hic ad
+            cum?</p>
+        <p class="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis nobis
+            consequatur ipsam quae
+            aut laboriosam perferendis aperiam ea, accusantium ratione nam doloribus non dolorum saepe voluptas hic ad
+            cum?</p>
+
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, voluptatum. Ullam, consequuntur dolores. Mollitia debitis ea id iste itaque, omnis temporibus dolores autem ipsum at suscipit assumenda nemo maiores reprehenderit!</span>
+        
+    </div>
+     
+</body>
+
+</html>

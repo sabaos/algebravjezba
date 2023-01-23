@@ -43,3 +43,34 @@ div.header-line{
     left: 100%;
     background: blue;
 }
+/*content*/
+.content{
+    line-height: 28px;
+}
+/*tabnovi*/
+.tabs-container{
+    position: relative;
+    background: #2652cc;
+    width: 120px;
+    height: 100vh;
+    float: left;
+    z-index: 20;
+}
+/*imena tabova*/
+.tabs-container label{
+    position: relative; /*postalvjamo poziciju na relativnu poziciju od nadređenog elemnta*/
+    padding: 10px; /*proširujemo menu element po našim potrebama*/
+    border-bottom: 1px solid greenyellow;
+    display: block;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    user-select: none;
+}
+.tabs-container label:hover{
+    background: darkslateblue;
+}
+/*sakrij radio od korisnika*/
+input[name="tab"]{
+    display: none;
+}

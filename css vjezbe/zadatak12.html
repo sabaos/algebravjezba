@@ -4,75 +4,77 @@
 <head>
     <meta charset="utf-8">
     <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
+        html body {
+            font-family: Arial;
+            overflow-x: hidden;
         }
 
         body {
-            align-items: center;
-            justify-content: center;
-            background-color: #afafaf;
-            display: flex;
+            background: #ccc;
         }
 
         section {
-            width: 600px;
-            background-color: white;
-
+            box-sizing: border-box;
+            margin: 0 auto;
+            width: 25rem;
+            background: white;
+            padding: 30px;
+            padding-bottom: 60px;
         }
 
-        h2::after {
-            content: "";
-            display: ;
-            border: green solid;
-        }
 
-        h2::before {
-            content: "";
-            display: ;
-            border: red solid;
-
-        }
-
-        h2 {
-
-            background-color: black;
+        .full-width {
+            position: relative;
+            margin: 0 -30px;
+            padding: .25rem 30px;
+            background: black;
             color: white;
-            padding: 0 50px 0 50px;
+            font-size: 1.125rem;
         }
 
-        .text{padding: 20px 50px 100px 50px;}
+        .full-width::after, .full-width::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 960px;
+            /*ukoliko je šririna premala kod resize ekrana neće biti dobro, stavimo veću brojku*/
+            right: 100%;
+            background: red;
+        }
 
-
+        .full-width::after {
+            width: 960px;
+            /*i također i kod ovog ukoliko je širina premala kod resize ekrana neće biti dobro, stavimo na veću brojku*/
+            left: 100%;
+            background: green;
+        }
     </style>
 </head>
 
 <body>
 
-
-
     <section>
 
-        <h2>Traka pune širine s pseudo elementima</h2>
-        <div class="text">
+        <h2 class="full-width">Traka pune širine s pseudo elementima</h2>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellendus voluptatibus culpa magni odit,
             commodi optio. Eveniet ullam non ratione doloremque optio illo quis, eos ipsa quae. Debitis, et laborum.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quam necessitatibus dolorum eum
-            repellendus, illo debitis dolor sequi! Dignissimos aliquid corporis itaque cumque aperiam maxime assumenda
+            repellendus, illo debitis dolor sequi! Dignissimos aliquid corporis itaque cumque aperiam maxime
+            assumenda
+            facere, reiciendis numquam voluptatibus?</p>
+
+        <p> Debitis, et laborum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quam necessitatibus dolorum eum
+            repellendus, illo debitis dolor sequi! Dignissimos aliquid corporis itaque cumque aperiam maxime
+            assumenda
             facere, reiciendis numquam voluptatibus?</p>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellendus voluptatibus culpa magni odit,
             commodi optio. Eveniet ullam non ratione doloremque optio illo quis, eos ipsa quae. Debitis, et laborum.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quam necessitatibus dolorum eum
-            repellendus, illo debitis dolor sequi! Dignissimos aliquid corporis itaque cumque aperiam maxime assumenda
-            facere, reiciendis numquam voluptatibus?</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellendus voluptatibus culpa magni odit,
-            commodi optio. Eveniet ullam non ratione doloremque optio illo quis, eos ipsa quae. Debitis, et laborum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quam necessitatibus dolorum eum
-            repellendus, illo debitis dolor sequi! Dignissimos aliquid corporis itaque cumque aperiam maxime assumenda
-            facere, reiciendis numquam voluptatibus?</p>
-        </div>
+            repellendus, illo debitis dolor sequi!</p>
     </section>
 </body>
 

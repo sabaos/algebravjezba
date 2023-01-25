@@ -1,6 +1,7 @@
 header{
     display: block;
 }
+.tab-content img{width: 400px;}
 .header{
     float: left;
     width: 100%;
@@ -73,4 +74,37 @@ div.header-line{
 /*sakrij radio od korisnika*/
 input[name="tab"]{
     display: none;
+}
+/*content area for tabs*/
+.tab-content{
+    position: relative;
+    background: #eee;
+    width: calc(100% - 120px); 
+    min-height: 100vh;
+    padding: 15px;
+    float: left;
+    box-sizing: border-box;
+    z-index: 19;
+    display: none;
+}
+.tab-content::after{
+    content: "";
+    clear: both;
+}
+
+/*prikaži tab kad je označena sa checked*/
+input[name="tab"]:checked + .tab-content{
+    display: block;
+    animation: slide 0.5s forwards;
+}
+/*slide animacija pojavljivanja za sadržaj taba*/
+@keyframes slide{
+    from{
+        left: -100%;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
 }

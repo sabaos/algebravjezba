@@ -1,0 +1,27 @@
+.flex-container{
+    /*1 flex layout context*/
+    display: flex;
+    /*
+    *flex-direction:row;
+    * flex-wrap: wrap;
+    radi isto kao i flex-flow: row wrap dolje naveden
+    */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.flex-item{
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+
+}

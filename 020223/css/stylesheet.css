@@ -1,6 +1,14 @@
 *{border: 1px solid black;}
 
-.item-a{grid-area: header;}
+.item-a{
+    grid-area: header;
+    border-top: #FF6847 5px solid;
+    border-left: #FF6847 5px solid;
+    background-color: #FF512B;
+    border-radius: 15px;
+    height: 45px;
+    text-align: center;
+}
 .item-b{grid-area: main;}
 .item-c{grid-area: sidebar;}
 .item-d{grid-area: footer;}
@@ -12,5 +20,6 @@
     grid-template-areas: 
     "header header header header header header"
     "main main . sidebar . ."
-    "footer footer footer footer . .";
+    "footer footer footer footer . ."
+    ;
 }

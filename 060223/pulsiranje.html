@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="">
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            border-radius: 20px;
+            position: absolute;
+            color: white;
+            background-color: black;
+            text-align: center;
+            top: 100px;
+            left: 100px;
+            animation: pulsiraj 1s infinite;
+            animation-direction: alternate;
+        }
+        @keyframes pulsiraj {
+            0%{
+                transform: scale(0.75);
+                background-color: black;
+            }
+            25%{
+                background-color: violet;
+            }
+            50%{
+                background-color: crimson;
+            }
+            75%{
+                background-color: darkblue;
+            }
+            100%{
+                transform: scale(1.5);
+                background-color: yellow;}
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>puls</div>
+    
+</body>
+
+</html>
